@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Chart from './Components/chart.jsx';
+import 'bootstrap/dist/css/bootstrap.css';
 function App() {
   return (
    <div className="App">
@@ -9,6 +10,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <Chart></Chart>
         <a
           className="App-link"
           href="https://reactjs.org"
