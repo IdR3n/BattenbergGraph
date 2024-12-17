@@ -1,15 +1,17 @@
 import React from 'react';
 import './App.css';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 //import Chart from './Components/chart.jsx';
 import 'bootstrap/dist/css/bootstrap.css';
-import NavStrap from './Components/NavStrap.js';
+import NavStrap from './Components/NavbarFIle/NavStrap.js';
 <link rel="stylesheet" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" />
 
 function App() {
   return (
    <div className="App">
-    <NavStrap />
+    <div className='NavStrap'>
+      <NavStrap />
+    </div>
      <header className="App-header">
        </header>
      </div>
