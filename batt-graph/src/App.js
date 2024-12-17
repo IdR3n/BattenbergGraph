@@ -1,13 +1,12 @@
 import './App.css';
-//import Chart from './Components/chart.jsx';
-import Navibar from './Components/navbar.js';
+import Chart from './Components/chart.jsx';
 import 'bootstrap/dist/css/bootstrap.css';
 
 <link rel="stylesheet" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" />
 
 function App() {
   return (
-    <Navibar/>
+    <Chart/>
   );
  
 }
