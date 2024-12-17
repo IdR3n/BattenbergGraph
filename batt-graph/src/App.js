@@ -12,6 +12,7 @@ function App() {
    <div className="App">
     <NavStrap />
      <header className="App-header">
+
        </header>
      </div>
   );
