@@ -26,14 +26,15 @@ function NavStrap(args) {
                         Options
                       </DropdownToggle>
                       <DropdownMenu right>
-                        <DropdownItem>Add API</DropdownItem>
-                        <DropdownItem>Graphing</DropdownItem>
+                        <DropdownItem href="./Pagination/Adding.js">Add API
+                        </DropdownItem>
+                        <DropdownItem href="./Pagination/Graphing.js">Graphing</DropdownItem>
                         <DropdownItem divider />
-                        <DropdownItem>Reset</DropdownItem>
+                        <DropdownItem href="http://192.168.10.107:3000">Reset</DropdownItem>
                       </DropdownMenu>
                     </UncontrolledDropdown>
                   </Nav>
-                  <NavbarText>Simple Text</NavbarText>
+                  <NavbarText>Fondation Battenberg 2024-2025 published</NavbarText>
                 </Collapse>
               </Navbar>
             </div>
