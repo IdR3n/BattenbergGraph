@@ -1,31 +1,43 @@
 import React, {useState} from "react";
 import './NavStrap.css';
-import {Link} from "react-router-dom";
+//import {Link} from "react-router-dom";
 import {Navbar, NavbarBrand, Button} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Adding from "../../Pagination/Adding";
+
+
 function NavStrap() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Sidebar'ın açılıp kapanmasını kontrol eden fonksiyon
+  // Il est controller de ouvrir/fermer le sidebar. 
   const toggleSidebar = () => setIsOpen(!isOpen);
 
   return (
     <div>
-     <Navbar className="my-2" color="danger" expand="md">
+     <Navbar className="my-2 NavbarCss" color="danger" expand="xl">
         <Button color="light" onClick={toggleSidebar} style={{zIndex: 2, position: 'relative', marginRight: '15px'}}>☰</Button>
         <NavbarBrand href="/" style={{
           zIndex: 1,
           color: 'white'
-        }}>          
-          Battenberg Grapher
+        }}>
+          <img
+            alt="logo"
+            src={require('../image/Untitled.png')}
+            style={{
+              height: 50,
+              width: 50,
+              margin: 15
+            }}
+          />          
+          Battenberg Graph
         </NavbarBrand>
       </Navbar>
-      {/* Sidebar menü */}
+      {/* Sidebar menu */}
       <div className={`sidebar ${isOpen ? 'open' : ''}`} style={{zIndex: 1}}><br />
         <a href="/">Page D'acceuil</a>
         <a href="/">Add API</a>
         <a href="/">Graphing</a>
+        <a href="/">Documentation</a>
       </div>
     </div>
   );
