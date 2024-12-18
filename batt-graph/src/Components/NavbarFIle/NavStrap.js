@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
-//import {Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {Navbar, NavbarBrand, Button} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import Adding from "../../Pagination/Adding";
+//import Graphing from "../../Pagination/Graphing"
+//import Documentation from '../../Pagination/Documentation';
 import './NavStrap.css';
 
 function NavStrap() {
@@ -32,11 +34,12 @@ function NavStrap() {
         </NavbarBrand>
       </Navbar>
       {/* Sidebar menu */}
-      <div className={`sidebar ${isOpen ? 'open' : ''}`} style={{zIndex: 1}}><br />
-        <a href="/">Page D'acceuil</a>
-        <a href="/">Add API</a>
-        <a href="/">Graphing</a>
-        <a href="/">Documentation</a>
+      <div className={`sidebar ${isOpen ? 'open' : ''}`} style={{zIndex: 1}}>
+        <br />
+        <Link to="/">Home</Link>
+        <Link to="/adding">Adding API</Link>
+        <Link to="/graphing">Graphing</Link>
+        <Link to="/documentation">Documentation</Link>
       </div>
     </div>
   );
